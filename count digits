@@ -1,0 +1,8 @@
+class Solution:
+    def evenlyDivides (self, N):
+        count = 0
+        for i in str(N):
+            if int(i) != 0:
+                if int(N) % int(i) == 0:
+                    count += 1
+        return count
